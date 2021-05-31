@@ -1,0 +1,37 @@
+<html>
+<header>
+<title>미션문제 만들기</title>
+<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+<style>
+body {font-family: 'Nanum Gothic', sans-serif;}
+h1 {margin : 1rem;}
+details {padding : 1rem; white-space: pre-wrap;}
+.question {margin : 2rem; padding : 1rem; border: 1px solid gray;}
+</style>
+</header>
+
+<body>
+
+<h1>[손정현]</h1>
+
+<div class='question' id='Q1'>
+
+      <h4>1. 성(last_name)이 'A'로 시작하는 직원들의 이름(first_name)과 직업(job_title)을 나타내라.</h4>
+      
+      <details>
+            <summary>모범 답안</summary>
+            <strong>select</strong> first_name, last_name, job_title
+            <strong>from</strong> emp_details_view
+            <strong>where</strong> last_name like 'A%'; 
+            FIRST_NAME                               LAST_NAME                                          JOB_TITLE
+            ---------------------------------------- -------------------------------------------------- ----------------------------------------------------------------------
+            David                                    Austin                                             Programmer
+            Ellen                                    Abel                                               Sales Representative
+            Sundar                                   Ande                                               Sales Representative
+            Mozhe                                    Atkinson                                           Stock Clerk
+            
+      </details>
+
+</div>
+</body>
+</html>
