@@ -33,5 +33,22 @@ details {padding : 1rem; white-space: pre-wrap;}
       </details>
 
 </div>
+
+<div class=question id=Q2>
+<h4>2. 2005년 한해동안 입사한 직원들 중 연봉이 10000 이상이고, 성(last_name)에 'S' 가 들어가는 직원들의 이름(first_name)과 부서정보(department_id) 그리고 연봉(salary)을 나타내시오</h4>
+<details><summary>모범 답안</summary>
+<strong>select</strong> first_name, last_name, department_id, salary
+<strong>from</strong> employees
+<strong>where</strong> hire_date <strong>between</strong>'05/01/01'<strong>and</strong>'05/12/31'
+<strong>and</strong>last_name<strong>like</strong> like '%S%' <strong>and</strong> salary >= '5000';
+
+FIRST_NAME                               LAST_NAME                                          DEPARTMENT_ID     SALARY
+---------------------------------------- -------------------------------------------------- ------------- ----------
+Ismael                                   Sciarra                                                      100       7700
+Lindsey                                  Smith                                                         80       8000
+
+</details>
+</div>
+
 </body>
 </html>
