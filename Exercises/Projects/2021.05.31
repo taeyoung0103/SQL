@@ -50,5 +50,27 @@ Lindsey                                  Smith                                  
 </details>
 </div>
 
+
+<h1>[초보자도 할 수 있는 SQL - PTY]</h1>
+
+<div class='question' id='Q1'>
+
+      <h4>1. job_id가 A로 시작하는 사람들과 min_salary가 10000 미만인 사람들의 job_id, job_title, min_salary를 출력하시오</h4>
+      
+      <details>
+            <summary>모범 답안</summary>
+            <strong>select</strong> job_id, JOB_TITLE, min_salary
+            <strong>from</strong> jobs
+            <strong>where</strong> job_id <strong> like </strong> 'A%' <strong>and</strong> min_salary </strong> < </strong>10000;
+
+            JOB_ID               JOB_TITLE                                                              MIN_SALARY
+            -------------------- ---------------------------------------------------------------------- ----------
+            AC_ACCOUNT           Public Accountant                                                            4200
+            AC_MGR               Accounting Manager                                                           8200
+            AD_ASST              Administration Assistant                                                     3000
+      </details>
+
+</div>
+
 </body>
 </html>
